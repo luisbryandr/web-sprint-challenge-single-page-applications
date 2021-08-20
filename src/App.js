@@ -35,7 +35,8 @@ function Pizza (){
       maxLength='75'
       placeholder='Special instructions go here'
       name='specialinstructions'
-      />
+      /><br />
+      <button id='order-button'>Add to Order</button>
     </form>
   </div>
   )
