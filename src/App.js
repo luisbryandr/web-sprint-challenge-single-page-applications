@@ -4,7 +4,8 @@ import {BrowserRouter, Route, Link} from 'react-router-dom'
 function Pizza (){
   return (
   <div>
-    <h1>Live your best life, create your ideal pizza below</h1>
+    <h1>Live your best life!</h1>
+      <h3> Create your ideal pizza below</h3>
     <form id='pizza-form'>
       <label htmlFor='name-input'>Coder's Name</label>
       <input
@@ -21,13 +22,20 @@ function Pizza (){
         <option value='3'>To Share / Large</option>
       </select><br />
 
-      <label  htmlFor='toppings-checklist'>Choose your tops!</label>
-      <input
-      type='checkbox'
-      id='toppings-checklist'
-      name='toppings'
-     
-      /><br />
+      <label>Pizza Toppings
+        <input
+          type='checkbox'
+          id='toppings-checklist'
+          name='toppings'
+          />
+          <input
+          type='checkbox'
+          id='toppings-checklist'
+          name='pineapple'/>
+
+      </label><br />
+
+
       <label htmlFor='special-text'>Got a particular way you like your pie?</label>
       <input
       type='text'
@@ -36,6 +44,7 @@ function Pizza (){
       placeholder='Special instructions go here'
       name='specialinstructions'
       /><br />
+      <input type='submit'/>
       <button id='order-button'>Add to Order</button>
     </form>
   </div>
@@ -45,7 +54,7 @@ function Pizza (){
    
 }
 function Home (){
-  return <h1>Back at Home eh?</h1>
+  return <h1>Back at Home, eh?</h1>
 }
 const App = () => {
   return (
