@@ -14,15 +14,34 @@ function Pizza (){
         name='fname'
         type='text'
       /><br />
-      <select>
-        <option>xxxxx</option>
-        <option>yyyy</option>
-        <option>zzzz</option>
+      <label htmlFor='size-dropdown'>Size of your Pie!</label>
+      <select id='size-dropdown'>
+        <option value='1'>Personal / Small</option>
+        <option value='2'>For Two / Medium</option>
+        <option value='3'>To Share / Large</option>
+      </select><br />
 
-      </select>
+      <label  htmlFor='toppings-checklist'>Choose your tops!</label>
+      <input
+      type='checkbox'
+      id='toppings-checklist'
+      name='toppings'
+     
+      /><br />
+      <label htmlFor='special-text'>Got a particular way you like your pie?</label>
+      <input
+      type='text'
+      id='special-text'
+      maxLength='75'
+      placeholder='Special instructions go here'
+      name='specialinstructions'
+      />
     </form>
   </div>
   )
+
+   //revisit this checkbox - you need a checklist for toppings!
+   
 }
 function Home (){
   return <h1>Back at Home eh?</h1>
