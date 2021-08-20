@@ -42,17 +42,20 @@ export default function Pizza (props){
           <option value='3'>To Share / Large</option>
         </select><br />
   
-        <label>Pizza Toppings
+        <h4>Pizza Toppings</h4>
+        <label>Pineapple
           <input
             type='checkbox'
             id='toppings-checklist'
-            name='toppings'
+            name='pineapple'
             onChange={onInputChange}
             />
+        </label>
+        <label>Tomato
             <input
             type='checkbox'
             id='toppings-checklist'
-            name='pineapple'
+            name='tomato'
             onChange={onInputChange}
             />
   
