@@ -58,7 +58,22 @@ export default function Pizza (props){
             name='tomato'
             onChange={onInputChange}
             />
-  
+        </label>    
+        <label>Spinach
+            <input
+            type='checkbox'
+            id='toppings-checklist'
+            name='spinach'
+            onChange={onInputChange}
+            />
+        </label>    
+        <label>Love
+            <input
+            type='checkbox'
+            id='toppings-checklist'
+            name='love'
+            onChange={onInputChange}
+            />    
         </label><br />
   
   
